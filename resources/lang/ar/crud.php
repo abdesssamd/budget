@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'new' => 'جديد',
+    'edit' => 'تعديل',
+    'delete' => 'حذف',
+    'save' => 'حفظ',
+    'update' => 'تحديث',
+    'cancel' => 'إلغاء',
+    'close' => 'إغلاق',
+    'search' => 'بحث...',
+    'actions' => 'العمليات',
+    'confirm_delete' => 'هل أنت متأكد من الحذف ؟',
+    'success_op' => 'تمت العملية بنجاح !',
+    'error_op' => 'حدث خطأ ما.',
+    'item_deleted' => 'تم الحذف بنجاح.',
+    'filter_by' => 'تصفية حسب',
+    'select_option' => '-- اختر --',
+    'number' => 'الرقم',
+    'code' => 'الرمز',
+    'designation' => 'التعيين',
+    'designation_ar' => 'التعيين (بالعربية)',
+    'parent' => 'التبعية',
+    'no_results' => 'لا توجد نتائج.',
+];

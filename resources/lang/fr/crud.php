@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'new' => 'Nouveau',
+    'edit' => 'Modifier',
+    'delete' => 'Supprimer',
+    'save' => 'Enregistrer',
+    'update' => 'Mettre à jour',
+    'cancel' => 'Annuler',
+    'close' => 'Fermer',
+    'search' => 'Rechercher...',
+    'actions' => 'Actions',
+    'confirm_delete' => 'Confirmer la suppression ?',
+    'success_op' => 'Opération réussie !',
+    'error_op' => 'Une erreur est survenue.',
+    'item_deleted' => 'Élément supprimé.',
+    'filter_by' => 'Filtrer par',
+    'select_option' => '-- Sélectionner --',
+    'number' => 'Numéro',
+    'code' => 'Code',
+    'designation' => 'Désignation',
+    'designation_ar' => 'Désignation (Arabe)',
+    'parent' => 'Rattachement',
+    'no_results' => 'Aucun résultat trouvé.',
+];
