@@ -54,10 +54,11 @@ return new class extends Migration {
             $table->index('IDObj4', 'WDIDX_bdg_Operation_recette_IDObj4');
             $table->index('IDObj5', 'WDIDX_bdg_Operation_recette_IDObj5');
             $table->index('IDSection', 'WDIDX_bdg_Operation_recette_IDSection');
-            $table->index(
-                ['IDSection','IDObj1','IDObj2','IDObj3','IDObj4','IDObj5','EXERCICE','IDBudjet'],
-                'WDIDX_bdg_Operation_recette_IDSectionIDObj1IDObj2IDObj3IDObj400000'
-            );
+         // On ajoute 'idx_recette_composite' comme deuxième argument
+$table->index(
+    ['IDSection', 'IDObj1', 'IDObj2', 'IDObj3', 'IDObj4', 'IDObj5', 'EXERCICE', 'IDBudjet'], 
+    'idx_recette_composite'
+);
             $table->index('Num_operation', 'WDIDX_bdg_Operation_recette_Num_operation');
         });
     }
