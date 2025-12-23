@@ -9,7 +9,8 @@ return new class extends Migration {
     {
         Schema::create('bdg_free_mission', function (Blueprint $table) {
 
-            $table->bigInteger('IDbdg_Free_mission')->primary();
+            // CORRECTION 1 : bigIncrements pour gérer l'AUTO_INCREMENT + Primary Key
+            $table->bigIncrements('IDbdg_Free_mission');
 
             $table->string('Reference', 20)->nullable()->unique();
             $table->date('Date_mission')->nullable();
@@ -24,7 +25,9 @@ return new class extends Migration {
             $table->string('Itineraire', 100)->nullable();
 
             $table->timestamp('date_depart')->useCurrent()->useCurrentOnUpdate();
-            $table->timestamp('date_arrive')->nullable()->default('0000-00-00 00:00:00');
+            
+            // CORRECTION 2 : Suppression du default '0000-00-00' qui fait planter MySQL
+            $table->timestamp('date_arrive')->nullable();
 
             $table->decimal('frais_sup', 24, 6)->nullable();
 
@@ -42,7 +45,8 @@ return new class extends Migration {
             $table->decimal('MontantFM', 24, 6)->default(0.000000);
             $table->decimal('MontantFM_total', 24, 6)->default(0.000000);
 
-            $table->timestamp('Creer_le')->nullable()->default('0000-00-00 00:00:00');
+            // CORRECTION 3 : Idem, on supprime le default zéro date
+            $table->timestamp('Creer_le')->nullable();
 
             $table->bigInteger('IDLogin')->default(0);
             $table->integer('IDExercice')->default(0);
@@ -51,10 +55,13 @@ return new class extends Migration {
             $table->index('Reference');
             $table->index('Date_mission', 'WDIDX_bdg_Free_mission_Date_mission');
             $table->index('IDBudjet', 'WDIDX_bdg_Free_mission_IDBudjet');
+            
+            // Index composite
             $table->index(
                 ['IDSection','IDObj1','IDObj2','IDObj3','IDObj4','IDObj5','IDBudjet'],
                 'WDIDX_bdg_Free_mission_IDClecompose'
             );
+            
             $table->index('IDObj1', 'WDIDX_bdg_Free_mission_IDObj1');
             $table->index('IDObj2', 'WDIDX_bdg_Free_mission_IDObj2');
             $table->index('IDObj3', 'WDIDX_bdg_Free_mission_IDObj3');

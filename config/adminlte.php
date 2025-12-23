@@ -6,14 +6,7 @@ return [
     |--------------------------------------------------------------------------
     | Title
     |--------------------------------------------------------------------------
-    |
-    | Here you can change the default title of your admin panel.
-    |
-    | For detailed instructions you can look the title section here:
-    | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Basic-Configuration
-    |
     */
-
     'title' => 'G-Stock',
     'title_prefix' => '',
     'title_postfix' => '',
@@ -22,14 +15,7 @@ return [
     |--------------------------------------------------------------------------
     | Favicon
     |--------------------------------------------------------------------------
-    |
-    | Here you can activate the favicon.
-    |
-    | For detailed instructions you can look the favicon section here:
-    | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Basic-Configuration
-    |
     */
-
     'use_ico_only' => false,
     'use_full_favicon' => false,
 
@@ -37,32 +23,16 @@ return [
     |--------------------------------------------------------------------------
     | Google Fonts
     |--------------------------------------------------------------------------
-    |
-    | Here you can allow or not the use of external google fonts. Disabling the
-    | google fonts may be useful if your admin panel internet access is
-    | restricted somehow.
-    |
-    | For detailed instructions you can look the google fonts section here:
-    | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Basic-Configuration
-    |
     */
-
     'google_fonts' => [
         'allowed' => false,
     ],
 
     /*
     |--------------------------------------------------------------------------
-    | Admin Panel Logo
+    | Logo
     |--------------------------------------------------------------------------
-    |
-    | Here you can change the logo of your admin panel.
-    |
-    | For detailed instructions you can look the logo section here:
-    | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Basic-Configuration
-    |
     */
-
     'logo' => '<b>G-Stock</b>Budget',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
@@ -74,15 +44,7 @@ return [
     |--------------------------------------------------------------------------
     | Authentication Logo
     |--------------------------------------------------------------------------
-    |
-    | Here you can setup an alternative logo to use on your login and register
-    | screens. When disabled, the admin panel logo will be used instead.
-    |
-    | For detailed instructions you can look the auth logo section here:
-    | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Basic-Configuration
-    |
     */
-
     'auth_logo' => [
         'enabled' => false,
         'img' => [
@@ -96,19 +58,9 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Preloader Animation
+    | Preloader
     |--------------------------------------------------------------------------
-    |
-    | Here you can change the preloader animation configuration. Currently, two
-    | modes are supported: 'fullscreen' for a fullscreen preloader animation
-    | and 'cwrapper' to attach the preloader animation into the content-wrapper
-    | element and avoid overlapping it with the sidebars and the top navbar.
-    |
-    | For detailed instructions you can look the preloader section here:
-    | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Basic-Configuration
-    |
     */
-
     'preloader' => [
         'enabled' => true,
         'mode' => 'fullscreen',
@@ -125,14 +77,7 @@ return [
     |--------------------------------------------------------------------------
     | User Menu
     |--------------------------------------------------------------------------
-    |
-    | Here you can activate and change the user menu.
-    |
-    | For detailed instructions you can look the user menu section here:
-    | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Basic-Configuration
-    |
     */
-
     'usermenu_enabled' => true,
     'usermenu_header' => true,
     'usermenu_header_class' => 'bg-primary',
@@ -144,14 +89,7 @@ return [
     |--------------------------------------------------------------------------
     | Layout
     |--------------------------------------------------------------------------
-    |
-    | Here we change the layout of your admin panel.
-    |
-    | For detailed instructions you can look the layout section here:
-    | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Layout-and-Styling-Configuration
-    |
     */
-
     'layout_topnav' => null,
     'layout_boxed' => null,
     'layout_fixed_sidebar' => null,
@@ -163,14 +101,7 @@ return [
     |--------------------------------------------------------------------------
     | Authentication Views Classes
     |--------------------------------------------------------------------------
-    |
-    | Here you can change the look and behavior of the authentication views.
-    |
-    | For detailed instructions you can look the auth classes section here:
-    | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Layout-and-Styling-Configuration
-    |
     */
-
     'classes_auth_card' => 'card-outline card-primary',
     'classes_auth_header' => '',
     'classes_auth_body' => '',
@@ -182,14 +113,7 @@ return [
     |--------------------------------------------------------------------------
     | Admin Panel Classes
     |--------------------------------------------------------------------------
-    |
-    | Here you can change the look and behavior of the admin panel.
-    |
-    | For detailed instructions you can look the admin panel classes here:
-    | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Layout-and-Styling-Configuration
-    |
     */
-
     'classes_body' => '',
     'classes_brand' => '',
     'classes_brand_text' => '',
@@ -206,14 +130,7 @@ return [
     |--------------------------------------------------------------------------
     | Sidebar
     |--------------------------------------------------------------------------
-    |
-    | Here we can modify the sidebar of the admin panel.
-    |
-    | For detailed instructions you can look the sidebar section here:
-    | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Layout-and-Styling-Configuration
-    |
     */
-
     'sidebar_mini' => 'lg',
     'sidebar_collapse' => false,
     'sidebar_collapse_auto_size' => false,
@@ -223,27 +140,18 @@ return [
     'sidebar_scrollbar_auto_hide' => 'l',
     'sidebar_nav_accordion' => true,
     'sidebar_nav_animation_speed' => 300,
-    
-    // Option pour faire survoler les menus (flat style)
     'sidebar_nav_flat' => true, 
 
     /*
     |--------------------------------------------------------------------------
     | Control Sidebar (Right Sidebar)
     |--------------------------------------------------------------------------
-    |
-    | Here we can modify the right sidebar aka control sidebar of the admin panel.
-    |
-    | For detailed instructions you can look the right sidebar section here:
-    | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Layout-and-Styling-Configuration
-    |
     */
-
-    'right_sidebar' => true, // ACTIVÉ pour le panneau latéral caché
+    'right_sidebar' => true,
     'right_sidebar_icon' => 'fas fa-cogs',
     'right_sidebar_theme' => 'dark',
-    'right_sidebar_slide' => true, // Slide-over effect
-    'right_sidebar_push' => false, // Push content effect
+    'right_sidebar_slide' => true,
+    'right_sidebar_push' => false,
     'right_sidebar_scrollbar_theme' => 'os-theme-light',
     'right_sidebar_scrollbar_auto_hide' => 'l',
 
@@ -251,14 +159,7 @@ return [
     |--------------------------------------------------------------------------
     | URLs
     |--------------------------------------------------------------------------
-    |
-    | Here we can modify the url settings of the admin panel.
-    |
-    | For detailed instructions you can look the urls section here:
-    | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Basic-Configuration
-    |
     */
-
     'use_route_url' => false,
     'dashboard_url' => '/',
     'logout_url' => 'logout',
@@ -273,18 +174,7 @@ return [
     |--------------------------------------------------------------------------
     | Laravel Asset Bundling
     |--------------------------------------------------------------------------
-    |
-    | Here we can enable the Laravel Asset Bundling option for the admin panel.
-    | Currently, the next modes are supported: 'mix', 'vite' and 'vite_js_only'.
-    | When using 'vite_js_only', it's expected that your CSS is imported using
-    | JavaScript. Typically, in your application's 'resources/js/app.js' file.
-    | If you are not using any of these, leave it as 'false'.
-    |
-    | For detailed instructions you can look the asset bundling section here:
-    | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Other-Configuration
-    |
     */
-
     'laravel_asset_bundling' => false,
     'laravel_css_path' => 'css/app.css',
     'laravel_js_path' => 'js/app.js',
@@ -293,14 +183,7 @@ return [
     |--------------------------------------------------------------------------
     | Menu Items
     |--------------------------------------------------------------------------
-    |
-    | Here we can modify the sidebar/top navigation of the admin panel.
-    |
-    | For detailed instructions you can look here:
-    | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Menu-Configuration
-    |
     */
-
     'menu' => [
         // --- NAVBAR ---
         [
@@ -343,7 +226,7 @@ return [
             'dropdown_flabel' => 'Toutes les notifications',
         ],
 
-        // --- SIDEBAR PRINCIPALE ---
+        // --- SIDEBAR ---
         [
             'text' => 'menu.dashboard',
             'url'  => '/',
@@ -355,6 +238,7 @@ return [
             'text'    => 'menu.expenses',
             'icon'    => 'fas fa-fw fa-file-invoice-dollar',
             'submenu' => [
+                // 1. Mise en place du budget
                 [
                     'text' => 'Incorporation Globale',
                     'route'  => 'ops.global',
@@ -365,35 +249,40 @@ return [
                     'route'  => 'ops.repartition',
                     'icon' => 'fas fa-fw fa-chart-pie',
                 ],
+                
+                // 2. Exécution de la dépense
                 [
-                    'text' => 'menu.new_engagement',
-                    'route'  => 'engagement.create',
-                    'icon' => 'fas fa-fw fa-plus',
+                    'text' => 'menu.purchase_orders', // Bon de Commande (1)
+                    'route'  => 'operations.bc',
+                    'icon' => 'fas fa-fw fa-shopping-cart',
                 ],
                 [
-                    'text' => 'menu.liquidation',
+                    'text' => 'menu.new_engagement', // Engagement (2)
+                    'route'  => 'engagement.create',
+                    'icon' => 'fas fa-fw fa-file-signature',
+                ],
+                [
+                    'text' => 'menu.liquidation', // Liquidation (3)
                     'route'  => 'operations.liquidation',
                     'icon' => 'fas fa-fw fa-file-invoice',
                 ],
                 [
-                    'text' => 'menu.mandate',
+                    'text' => 'menu.mandate', // Mandatement (4)
                     'route'  => 'operations.mandat',
-                    'icon' => 'fas fa-fw fa-file-signature',
+                    'icon' => 'fas fa-fw fa-money-check-alt',
                 ],
             ],
         ],
         
-        // --- AJOUT DE L'ONGLET RECETTES ---
         [
-            'text'    => 'menu.revenue', // Assurez-vous d'avoir ajouté cette clé dans fr.json/ar.json
+            'text'    => 'menu.revenue',
             'icon'    => 'fas fa-fw fa-hand-holding-usd',
-            'route'   => 'operations.recette', // Route vers le composant de gestion des recettes
+            'route'   => 'operations.recette',
         ],
 
-        // --- GROUPE DES PARAMÈTRES (Sidebar) ---
         ['header' => 'menu.configuration'],
         
-        // 1. التسمية (Nomenclature)
+        // 1. Nomenclature
         [
             'text'    => 'menu.nomenclature',
             'icon'    => 'fas fa-fw fa-sitemap',
@@ -406,7 +295,7 @@ return [
             ],
         ],
 
-        // 2. المعاملات العامة (Paramètres Généraux)
+        // 2. Paramètres Généraux
         [
             'text'    => 'menu.general_params',
             'icon'    => 'fas fa-fw fa-cogs',
@@ -425,7 +314,7 @@ return [
             ],
         ],
 
-        // 3. الأطراف والموارد البشرية (Tiers & RH)
+        // 3. Tiers & RH
         [
             'text'    => 'menu.tiers_rh',
             'icon'    => 'fas fa-fw fa-users',
@@ -436,7 +325,7 @@ return [
             ],
         ],
 
-        // 4. الجغرافيا (Géographie)
+        // 4. Géographie
         [
             'text'    => 'menu.geography',
             'icon'    => 'fas fa-fw fa-map-marked-alt',

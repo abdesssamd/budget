@@ -30,7 +30,8 @@ return new class extends Migration {
             $table->tinyInteger('decouvert')->default(0);
 
             $table->bigInteger('IDbdg_rel_niveau')->default(0);
-
+			$table->decimal('Mont_operation', 24, 6)->default(0.000000);
+               $table->bigInteger('IDBON')->default(0)->index();
             $table->string('designation', 50)->nullable();
 
             $table->smallInteger('EXERCICE')->default(0);
