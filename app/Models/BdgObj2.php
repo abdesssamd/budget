@@ -13,7 +13,7 @@ class BdgObj2 extends Model
     public $timestamps = false;
 
     protected $fillable = [
-        'IDObj2','designation','Num','Creer_le','IDLogin','IDSection',
+        'designation','Num','Creer_le','IDLogin','IDSection',
         'IDObj1','designation_ara','Reference','Observations','dep_recette',
         'Mt_genr','Mt_projet','Mt_projet_Nv','Mt_Total','EXERCICE','IDBdg_Compte'
     ];

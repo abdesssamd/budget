@@ -14,7 +14,7 @@ class BdgObj3 extends Model
     public $timestamps = false; // "Creer_le" est géré par la BDD ou manuellement
 
     protected $fillable = [
-        'IDObj3', // Auto-increment géré par la BDD normalement, mais on le garde fillable au cas où
+        // Auto-increment géré par la BDD normalement, mais on le garde fillable au cas où
         'IDObj2', // Clé étrangère
         'designation', 
         'Num',

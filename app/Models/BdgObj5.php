@@ -14,7 +14,7 @@ class BdgObj5 extends Model
     public $timestamps = false;
 
     protected $fillable = [
-        'IDObj5',
+       
         'IDObj4', // Clé étrangère vers OBJ4
         'designation', 
         'Num',
