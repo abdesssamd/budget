@@ -17,10 +17,10 @@ return new class extends Migration {
                 ->useCurrentOnUpdate();
 
             $table->bigInteger('IDLogin')->default(0);
-            $table->bigInteger('IDSection')->nullable();
+            $table->unsignedBigInteger('IDSection')->nullable();
 
             $table->bigIncrements('IDObj4');
-            $table->integer('IDObj3')->nullable();
+            $table->unsignedBigInteger('IDObj3')->nullable();
 
             $table->string('designation_ara', 100)->nullable();
             $table->string('Reference', 50)->nullable();
