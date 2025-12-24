@@ -287,6 +287,7 @@ return [
             'text'    => 'menu.nomenclature',
             'icon'    => 'fas fa-fw fa-sitemap',
             'submenu' => [
+                 ['text' => 'menu.sections', 'route' => 'param.sections.index', 'icon' => 'fas fa-fw fa-building'],
                 ['text' => 'menu.chapters', 'route' => 'bdg.obj1.crud', 'icon' => 'far fa-fw fa-circle'],
                 ['text' => 'menu.articles', 'route' => 'bdg.obj2.crud', 'icon' => 'far fa-fw fa-circle'],
                 ['text' => 'menu.sub_articles', 'route' => 'bdg.obj3.crud', 'icon' => 'far fa-fw fa-circle'],
@@ -308,7 +309,7 @@ return [
                 ],
                 ['text' => 'menu.exercises', 'route' => 'exercices.index', 'icon' => 'fas fa-fw fa-calendar-alt'],
                 ['text' => 'menu.budgets', 'route' => 'budgets.index', 'icon' => 'fas fa-fw fa-coins'],
-                ['text' => 'menu.sections', 'route' => 'param.sections.index', 'icon' => 'fas fa-fw fa-building'],
+               
                 ['text' => 'menu.accounts', 'route' => 'param.comptes.index', 'icon' => 'fas fa-fw fa-book'],
                 ['text' => 'menu.banks', 'route' => 'param.banques.index', 'icon' => 'fas fa-fw fa-university'],
             ],
