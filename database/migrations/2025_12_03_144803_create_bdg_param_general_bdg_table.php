@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration {
     public function up(): void
     {
-        Schema::create('bdg_param_general_bdg', function (Blueprint $table) {
+        Schema::create('bdg_Param_general_bdg', function (Blueprint $table) {
 
             $table->id('IDParam_general_bdg');
 
