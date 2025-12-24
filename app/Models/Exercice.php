@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Exercice extends Model
 {
-    protected $table = 'stk_Exercice';
+    protected $table = 'stk_exercice';
     protected $primaryKey = 'IDExercice';
     public $timestamps = false;
 

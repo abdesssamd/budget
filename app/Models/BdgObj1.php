@@ -8,7 +8,7 @@ class BdgObj1 extends Model
 {
     protected $table = 'bdg_obj1';
     protected $primaryKey = 'IDObj1';
-    public $incrementing = false;
+    public $incrementing = true;
     protected $keyType = 'int';
     public $timestamps = false;
 

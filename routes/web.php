@@ -90,6 +90,12 @@ Route::middleware('auth')->group(function () {
     Volt::route('/operations/mandat', 'operations.mandat')->name('operations.mandat');
    // 7 recette 
    Volt::route('/operations/recette', 'operations.recette')->name('operations.recette');
+// 8 Incorporation suplementaire 
+    Volt::route('/operations/budget-supplementaire', 'operations.incorporation-supplementaire')
+        ->name('operations.budget-supplementaire');
+
+    Volt::route('/operations/repartition-supplementaire', 'operations.repartition-supplementaire')
+        ->name('operations.repartition-supplementaire');
 
     // ==========================================
     // 6. IMPRESSIONS GENERIQUES

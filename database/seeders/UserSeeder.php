@@ -20,7 +20,7 @@ class UserSeeder extends Seeder
         if (!$admin) {
             User::create([
                 'name' => 'Admin User',
-                'email' => 'admin@example.com',
+                'email' => 'admin@budget.dz',
                 'email_verified_at' => now(),
                 'password' => Hash::make('password'), // Changez le mot de passe ici si vous voulez
                 'remember_token' => null,

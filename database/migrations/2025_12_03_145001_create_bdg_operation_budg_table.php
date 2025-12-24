@@ -13,7 +13,8 @@ return new class extends Migration {
 
             $table->decimal('Montant_anc', 24, 6)->default(0.000000);
 
-            $table->integer('Num_operation')->default(0);
+            // CORRECTION ICI : Changement de integer vers string pour accepter 'BS250617'
+            $table->string('Num_operation', 50)->default('0');
 
             $table->timestamp('Creer_le')->useCurrent()->useCurrentOnUpdate();
 
@@ -30,9 +31,13 @@ return new class extends Migration {
             $table->tinyInteger('decouvert')->default(0);
 
             $table->bigInteger('IDbdg_rel_niveau')->default(0);
-			$table->decimal('Mont_operation', 24, 6)->default(0.000000);
-               $table->bigInteger('IDBON')->default(0)->index();
+            $table->decimal('Mont_operation', 24, 6)->default(0.000000);
+            
+            // CORRECTION PRÉCÉDENTE : on a retiré ->change()
+            $table->bigInteger('IDBON')->nullable()->default(null);
+            
             $table->string('designation', 50)->nullable();
+            $table->longText('Observations')->nullable();
 
             $table->smallInteger('EXERCICE')->default(0);
             $table->bigInteger('IDBudjet')->default(0);
@@ -54,6 +59,9 @@ return new class extends Migration {
                 'WDIDX_bdg_Operation_Budg_IDSectionIDObj1IDObj2IDObj3IDObj400000'
             );
             $table->index('Num_operation', 'WDIDX_bdg_Operation_Budg_Num_operation');
+            
+            // Ajout de l'index sur IDBON car tu fais des jointures dessus (optimisation)
+            $table->index('IDBON', 'WDIDX_bdg_Operation_Budg_IDBON');
         });
     }
 

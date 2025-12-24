@@ -60,5 +60,19 @@ return [
     'collection_date' => 'تاريخ التحصيل',
     'payer' => 'الهيئة الدافعة / الغير',
     'revenue_amount' => 'المبلغ المحصل',
+
+ 
+    'budget_supplementaire' => 'ميزانية إضافية',
+    'budget_rectificatif' => 'ميزانية تصحيحية',
+    'virement_credits' => 'تحويل اعتمادات',
+    'report_credits' => 'ترحيل اعتمادات',
+    
+    'numero_decision' => 'رقم القرار',
+    'date_decision' => 'تاريخ القرار',
+    'source_financement' => 'مصدر التمويل',
+    
+    'montant_disponible' => 'المبلغ المتاح',
+    'montant_reparti' => 'المبلغ الموزع',
+
     
 ];

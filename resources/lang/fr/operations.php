@@ -60,4 +60,19 @@ return [
     'collection_date' => 'Date de Perception',
     'payer' => 'Organisme Payeur / Tiers',
     'revenue_amount' => 'Montant Encaissé',
+    'budget_supplementaire' => 'Budget Supplémentaire',
+    'budget_rectificatif' => 'Budget Rectificatif',
+    'virement_credits' => 'Virement de Crédits',
+    'report_credits' => 'Report de Crédits',
+    
+    'numero_decision' => 'Numéro de décision',
+    'date_decision' => 'Date de décision',
+    'source_financement' => 'Source de financement',
+    
+    'montant_disponible' => 'Montant disponible',
+    'montant_reparti' => 'Montant réparti',
+    
+    'incorporation_bs_success' => 'Budget supplémentaire incorporé avec succès',
+    'repartition_bs_success' => 'Répartition effectuée avec succès',
+    'credit_insuffisant' => 'Crédit insuffisant',
 ];

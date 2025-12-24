@@ -12,7 +12,7 @@ class BdgObj1Factory extends Factory
     {
         return [
             'Code_obj1' => $this->faker->unique()->numerify('##'),
-            'Libelle_obj1' => 'Objet 1 - ' . $this->faker->word(),
+            'Libelle_obj1' => 'Titre - ' . $this->faker->rand(1,10),
             'Libelle_obj1_ara' => 'البند 1',
             'EXERCICE' => date('Y'),
             'IDLogin' => 0,
