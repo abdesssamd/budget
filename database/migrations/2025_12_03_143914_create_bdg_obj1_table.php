@@ -10,7 +10,7 @@ return new class extends Migration
     {
         Schema::create('bdg_obj1', function (Blueprint $table) {
 
-            $table->bigInteger('IDObj1')->primary();
+            $table->bigIncrements('IDObj1');
             $table->string('designation', 100)->nullable();
             $table->string('Num', 50)->nullable();
 

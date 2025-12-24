@@ -9,7 +9,7 @@ return new class extends Migration {
     {
         Schema::create('bdg_param_general_bdg', function (Blueprint $table) {
 
-            $table->bigInteger('IDParam_general_bdg')->primary();
+            $table->id('IDParam_general_bdg');
 
             $table->timestamp('Creer_le')->useCurrent()->useCurrentOnUpdate();
             $table->bigInteger('IDLogin')->default(0);

@@ -8,7 +8,7 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::create('bdg_section', function (Blueprint $table) {
-            $table->bigInteger('IDSection')->primary();
+            $table->id('IDSection');
             $table->string('Num_section', 50)->nullable();
             $table->string('NOM_section', 100)->nullable();
 

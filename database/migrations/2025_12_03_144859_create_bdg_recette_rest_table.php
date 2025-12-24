@@ -9,7 +9,7 @@ return new class extends Migration {
     {
         Schema::create('bdg_recette_rest', function (Blueprint $table) {
 
-            $table->bigInteger('IDre_Operation_Budg')->primary();
+            $table->id('IDre_Operation_Budg');
 
             $table->integer('Num_operation')->default(0);
 

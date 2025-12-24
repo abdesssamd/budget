@@ -9,7 +9,7 @@ return new class extends Migration {
     {
         Schema::create('bdg_rel_niveau', function (Blueprint $table) {
 
-            $table->bigInteger('IDbdg_rel_niveau')->primary();
+            $table->id('IDbdg_rel_niveau');
             $table->integer('idbdg_niveau1')->default(0);
             $table->integer('idbdg_niveau2')->default(0);
 

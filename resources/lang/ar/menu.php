@@ -85,6 +85,6 @@ return [
       'incorporation_globale' =>'الميزانية الإجمالية للإدماج',
        'repartition'  =>'توزيع الميزانية',
         'liquidation' =>'التصفية',
-        
+        'revenue' => ' الإيرادات',
     ],
 ];

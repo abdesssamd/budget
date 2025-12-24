@@ -9,7 +9,7 @@ return new class extends Migration {
     {
         Schema::create('bdg_facture', function (Blueprint $table) {
 
-            $table->bigInteger('IDbdg_facture')->primary();
+            $table->bigIncrements('IDbdg_facture');
 
             $table->string('Reference', 20)->unique();
             $table->string('num_facture', 50)->nullable();

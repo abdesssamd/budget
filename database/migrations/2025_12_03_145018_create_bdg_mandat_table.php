@@ -9,7 +9,7 @@ return new class extends Migration {
     {
         Schema::create('bdg_mandat', function (Blueprint $table) {
 
-            $table->bigInteger('IDMandat')->primary();
+            $table->id('IDMandat');
 
             $table->string('Num_mandat', 50)->nullable();
             $table->date('date_mandate')->nullable();

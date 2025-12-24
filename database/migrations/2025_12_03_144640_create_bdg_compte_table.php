@@ -9,7 +9,7 @@ return new class extends Migration {
     {
         Schema::create('bdg_compte', function (Blueprint $table) {
 
-            $table->bigInteger('IDBdg_Compte')->primary();
+            $table->id('IDBdg_Compte');
 
             $table->string('Num_Compte', 20)->nullable();
             $table->string('designation', 50)->nullable();

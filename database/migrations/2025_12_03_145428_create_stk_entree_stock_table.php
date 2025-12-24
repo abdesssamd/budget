@@ -14,7 +14,7 @@ return new class extends Migration {
             $table->double('Quantite')->default(0);
             $table->date('DateAppro');
 
-            $table->bigInteger('IDEntree')->primary();
+            $table->bigIncrements('IDEntree');
 
             $table->longText('Observations');
             $table->string('SaisiPar', 40);

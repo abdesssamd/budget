@@ -19,7 +19,7 @@ return new class extends Migration {
             $table->bigInteger('IDLogin')->default(0);
             $table->bigInteger('IDSection')->nullable();
 
-            $table->integer('IDObj4')->primary();
+            $table->bigIncrements('IDObj4');
             $table->integer('IDObj3')->nullable();
 
             $table->string('designation_ara', 100)->nullable();

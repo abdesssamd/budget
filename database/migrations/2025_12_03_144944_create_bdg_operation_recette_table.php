@@ -9,7 +9,7 @@ return new class extends Migration {
     {
         Schema::create('bdg_operation_recette', function (Blueprint $table) {
 
-            $table->bigInteger('IDOperation_Budg')->primary();
+            $table->id('IDOperation_Budg');
 
             $table->decimal('Montant_anc', 24, 6)->default(0.000000);
 

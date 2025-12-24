@@ -7,20 +7,16 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration {
     public function up(): void
     {
-        Schema::create('stk_unite', function (Blueprint $table) {
-
-            $table->bigIncrements('IDUnite');
-
+        Schema::create('stk_exercice', function (Blueprint $table) {
+            $table->increments('IDExercice');
             $table->string('Libellé', 50)->nullable();
-            $table->string('ABV', 5)->nullable();
-            $table->string('Type', 1)->nullable();
-
-            $table->integer('unitecoff')->nullable();
+            $table->string('anne', 4)->nullable();
+            $table->tinyInteger('Ouvert')->nullable();
         });
     }
 
     public function down(): void
     {
-        Schema::dropIfExists('stk_unite');
+        Schema::dropIfExists('stk_exercice');
     }
 };
