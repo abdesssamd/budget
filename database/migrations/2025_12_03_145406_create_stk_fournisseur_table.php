@@ -26,8 +26,8 @@ return new class extends Migration {
             $table->string('Civilite', 5)->nullable();
             $table->string('Prénom', 50)->nullable();
 
-            $table->string('num_carte_fiscale', 20);
-            $table->string('num_registre_commerce', 20);
+            $table->string('num_carte_fiscale', 20)->nullable();
+            $table->string('num_registre_commerce', 20)->nullable();
             $table->string('NIS', 50)->nullable();
 
             // Indexes

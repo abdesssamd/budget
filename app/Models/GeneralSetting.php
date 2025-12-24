@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class GeneralSetting extends Model
 {
-    protected $table = 'bdg_Param_general_bdg';
+    protected $table = 'bdg_param_general_bdg';
     protected $primaryKey = 'IDParam_general_bdg';
     public $timestamps = false;
 
