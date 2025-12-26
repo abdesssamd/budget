@@ -21,6 +21,8 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
              BdgSectionSeeder::class,
               StkExerciceSeeder::class,
+              BdgParamGeneralBdgSeeder::class,
+            BdgNomenclatureSeeder::class,
         ]);
     }
 }

@@ -18,6 +18,8 @@ return new class extends Migration {
             $table->timestamp('Creer_le')->useCurrent()->useCurrentOnUpdate();
 		$table->decimal('Montant_Global', 24, 6)->default(0.000000);
         $table->decimal('Montant_Restant', 24, 6)->default(0.000000);
+         $table->decimal('Montant_Primitif', 24, 6)->default(0.000000);
+         $table->decimal('Montant_Total', 24, 6)->default(0.000000);
         
             $table->bigInteger('IDLogin')->default(0);
             $table->string('Reference', 20)->nullable();

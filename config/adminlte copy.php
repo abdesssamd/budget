@@ -238,51 +238,36 @@ return [
             'text'    => 'menu.expenses',
             'icon'    => 'fas fa-fw fa-file-invoice-dollar',
             'submenu' => [
-                // ========================================
-                // 1. MISE EN PLACE DU BUDGET
-                // ========================================
+                // 1. Mise en place du budget
                 [
-                    'text' => 'Incorporation Initiale',
-                    'route'  => 'operations.incorporation',
-                    'icon' => 'fas fa-fw fa-file-upload',
-                    'icon_color' => 'blue',
-                ],
-                [
-                    'text' => 'Budget Supplémentaire',
-                    'route'  => 'operations.incorporation-supplementaire',
-                    'icon' => 'fas fa-fw fa-plus-circle',
-                    'icon_color' => 'success',
+                    'text' => 'Incorporation Globale',
+                    'route'  => 'ops.global',
+                    'icon' => 'fas fa-fw fa-sack-dollar',
                 ],
                 [
                     'text' => 'Répartition',
                     'route'  => 'ops.repartition',
                     'icon' => 'fas fa-fw fa-chart-pie',
-                    'icon_color' => 'warning',
                 ],
                 
-                // Séparateur visuel
-                ['header' => 'EXÉCUTION BUDGÉTAIRE'],
-                
-                // ========================================
-                // 2. EXÉCUTION DE LA DÉPENSE
-                // ========================================
+                // 2. Exécution de la dépense
                 [
-                    'text' => 'menu.purchase_orders',
+                    'text' => 'menu.purchase_orders', // Bon de Commande (1)
                     'route'  => 'operations.bc',
                     'icon' => 'fas fa-fw fa-shopping-cart',
                 ],
                 [
-                    'text' => 'menu.new_engagement',
+                    'text' => 'menu.new_engagement', // Engagement (2)
                     'route'  => 'engagement.create',
                     'icon' => 'fas fa-fw fa-file-signature',
                 ],
                 [
-                    'text' => 'menu.liquidation',
+                    'text' => 'menu.liquidation', // Liquidation (3)
                     'route'  => 'operations.liquidation',
                     'icon' => 'fas fa-fw fa-file-invoice',
                 ],
                 [
-                    'text' => 'menu.mandate',
+                    'text' => 'menu.mandate', // Mandatement (4)
                     'route'  => 'operations.mandat',
                     'icon' => 'fas fa-fw fa-money-check-alt',
                 ],
@@ -302,7 +287,7 @@ return [
             'text'    => 'menu.nomenclature',
             'icon'    => 'fas fa-fw fa-sitemap',
             'submenu' => [
-                ['text' => 'menu.sections', 'route' => 'param.sections.index', 'icon' => 'fas fa-fw fa-building'],
+                 ['text' => 'menu.sections', 'route' => 'param.sections.index', 'icon' => 'fas fa-fw fa-building'],
                 ['text' => 'menu.chapters', 'route' => 'bdg.obj1.crud', 'icon' => 'far fa-fw fa-circle'],
                 ['text' => 'menu.articles', 'route' => 'bdg.obj2.crud', 'icon' => 'far fa-fw fa-circle'],
                 ['text' => 'menu.sub_articles', 'route' => 'bdg.obj3.crud', 'icon' => 'far fa-fw fa-circle'],
@@ -324,6 +309,7 @@ return [
                 ],
                 ['text' => 'menu.exercises', 'route' => 'exercices.index', 'icon' => 'fas fa-fw fa-calendar-alt'],
                 ['text' => 'menu.budgets', 'route' => 'budgets.index', 'icon' => 'fas fa-fw fa-coins'],
+               
                 ['text' => 'menu.accounts', 'route' => 'param.comptes.index', 'icon' => 'fas fa-fw fa-book'],
                 ['text' => 'menu.banks', 'route' => 'param.banques.index', 'icon' => 'fas fa-fw fa-university'],
             ],

@@ -38,6 +38,7 @@ Route::middleware('auth')->group(function () {
     Volt::route('/nomenclature/obj4', 'budget.bdg-obj4-crud')->name('bdg.obj4.crud');
     Volt::route('/nomenclature/obj5', 'budget.bdg-obj5-crud')->name('bdg.obj5.crud');
 
+
     // ==========================================
     // 2. PARAMETRES GENERAUX
     // ==========================================
@@ -96,6 +97,9 @@ Route::middleware('auth')->group(function () {
 
     Volt::route('/operations/repartition-supplementaire', 'operations.repartition-supplementaire')
         ->name('operations.repartition-supplementaire');
+
+           Volt::route('/operations/incorporation-supplementaire', 'operations.incorporation-supplementaire')
+        ->name('operations.incorporation-supplementaire');
 
     // ==========================================
     // 6. IMPRESSIONS GENERIQUES

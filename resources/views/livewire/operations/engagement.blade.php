@@ -491,7 +491,7 @@ class extends Component {
                     <h5 class="modal-title {{ $alignText }} w-100">{{ __('operations.new_engagement') }}</h5>
                     <button type="button" class="close text-white" wire:click="$set('showModal', false)" style="{{ $closeBtnStyle }}">&times;</button>
                 </div>
-                <form wire:submit.prevent="save">
+                <form wire:submit.prevent="save"  enctype="multipart/form-data">
                     <div class="modal-body">
                         
                         <!-- AJOUT : Liste pour choisir un Bon de Commande -->

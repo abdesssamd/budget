@@ -80,6 +80,21 @@ class BdgOperationBudg extends Model
         return $this->belongsTo(BdgObj5::class, 'IDObj5', 'IDObj5');
     }
 
+
+
+    // Relation Pièces Jointes
+    public function pjs() { return $this->hasMany(BdgPj::class, 'IDOperation_Budg', 'IDOperation_Budg'); }
+
+
+
+    // Cas 2 : Engagement avant BC (L'ancien code : Un engagement a plusieurs BC enfants)
+    public function bonsCommande() {
+        return $this->hasMany(StkBonCommande::class, 'IDOperation_Budg', 'IDOperation_Budg');
+    }
+
+
+
+    
     public function cf(): HasOne
     {
         return $this->hasOne(BdgCf::class, 'IDOperation_Budg', 'IDOperation_Budg');
@@ -274,4 +289,6 @@ class BdgOperationBudg extends Model
 
         return ($this->montant_reparti / $this->Mont_operation) * 100;
     }
+
+
 }
